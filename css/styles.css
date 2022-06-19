@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    /*[user]
+	name = abu fahim khan
+	email = abufahimkhan1@gmail.com
+[core]
+	editor = code --wait
+*/
+}
+
+body {
+    background-color: #ffffff;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.navbar {
+    z-index: 100;
+    padding: 10px;
+    background-color: #5084b1;
+    position: fixed;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #025db3;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: -10px;
+    padding: 0;
+    background-color: #5084b1;
+    max-width: fit-content;
+}
+
+.menu-items a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #d4e1eb;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.header {
+    background-color: #b8dfff5c;
+    padding: 60px;
+    /*padding is the space between the HTML contents and its borders*/
+}
+
+.wrapper {
+    margin-top: 10%;
+}
+
+.wrapper:hover {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.wrapper h1 {
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    border: 1px solid #cfd3d6;
+}
+
+.cards .card-body {
+    background: #fff;
+    margin: 0px;
+    margin-bottom: 0px;
+    width: 280px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.cards .card-body h3 {
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.cards .card-body p.role {
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.cards .card-body .cards_img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #e2e6e9;
+}
+
+.cards .card-body .cards_img img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+h3 {
+    color: #121213;
+}
+
+.text {
+    color: #ccc;
+    text-align: center;
+}
+
+.folded-corner:hover .text {
+    visibility: visible;
+    color: rgb(145, 141, 141);
+}
+
+.service_tab_1:hover {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.Services-tab {
+    margin-top: 20px;
+}
+
+
+/*
+ nav link items
+*/
+
+.folded-corner {
+    padding: 25px 25px;
+    position: relative;
+    font-size: 90%;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    transition: all ease .5s;
+    border: 1px solid #e2e6e9;
+}
+
+.folded-corner:hover {
+    background-color: white;
+}
+
+
+/*
+ paper fold corner
+*/
+
+.folded-corner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0px 0px 0;
+    border-color: #ddd #000;
+    transition: all ease .3s;
+}
+
+
+/*
+ on li hover make paper fold larger
+*/
+
+.folded-corner:hover:before {
+    background-color: #ffffff;
+    border-width: 0 50px 50px 0;
+    border-color: #eee rgb(235, 232, 232);
+}
+
+.service_tab_1 {
+    background-color: white;
+}
+
+.service_tab_1:hover .fa-icon-image {
+    color: #41a3f4;
+}
+
+.fa-icon-image {
+    color: #41a3f4;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99, .82, .11, 1.41);
+}
+
+.footer {
+    background-color: #5084b1;
+    padding: 5px;
+}
+
+
+/**********************
+/***** Services *******
+/*********************/
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.what-i-do {
+    background: #ffffff;
+}
+
+.what-i-do .card {
+    padding: 1rem!important;
+    border: none;
+    margin-bottom: 1rem;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+.what-i-do .card:hover {
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 0px 0px 11px 0px rgb(158 158 158);
+}
+
+.what-i-do .card .card-block {
+    position: relative;
+}
+
+.what-i-do .card .card-block a {
+    color: #3b87dd !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.what-i-do .card .card-block a i {
+    display: none;
+}
+
+.what-i-do .card:hover .card-block a i {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.what-i-do .card .card-block:before {
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.what-i-do .card:hover .card-block:before {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+.margin_all {
+    margin-left: 120px;
+    margin-right: 110px;
+}
+
+#iconstyle {
+    width: 55px;
+    height: px;
+}
+
+hr {
+    width: 86%;
+    text-align: center;
+    margin-left: 135px;
+}
+
+.projects {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 132px;
+}
+
+.no-gutters:hover {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.bg-info {
+    background-color: #ffffff!important;
+}
+
+.border-primary {
+    border-color: #ededed!important;
+}

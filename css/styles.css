@@ -20,20 +20,20 @@ body {
 .navbar {
     z-index: 100;
     padding: 10px;
-    background-color: #5084b1;
+    background-color: #57affb;
     position: fixed;
     width: 100%;
 }
 
 .btn:hover {
-    background-color: #025db3;
+    background-color: #57affb;
 }
 
 .menu-items {
     list-style-type: none;
     margin: -10px;
     padding: 0;
-    background-color: #5084b1;
+    background-color: #57affb;
     max-width: fit-content;
 }
 
@@ -62,8 +62,8 @@ li.dropdown {
 }
 
 .header {
-    background-color: #b8dfff5c;
-    padding: 60px;
+    background-color: #edf3f9;
+    padding: 20px;
     /*padding is the space between the HTML contents and its borders*/
 }
 
@@ -231,7 +231,7 @@ h3 {
 }
 
 .footer {
-    background-color: #5084b1;
+    background-color: #57affb;
     padding: 5px;
 }
 
@@ -345,4 +345,36 @@ hr {
 
 .border-primary {
     border-color: #ededed!important;
+}
+
+.mydivouter {
+    position: relative;
+    background: #f90;
+    width: 200px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.mydivoverlap {
+    position: relative;
+    z-index: 1;
+}
+
+.mybuttonoverlap {
+    position: absolute;
+    z-index: 2;
+    top: 44px;
+    display: none;
+    left: 59px;
+}
+
+.mydivouter:hover .mybuttonoverlap {
+    display: block;
+}
+
+.login {
+    max-width: 20%;
+    padding-left: 45px;
+    padding-top: 70px;
+    padding-bottom: 65px;
 }
